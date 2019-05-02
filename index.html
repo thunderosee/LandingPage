@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Always Strive And Prosper</title>
-    <link rel="stylesheet" href="сss/main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
 <header>
-<div class="header_logo">
+<div class="logo">
     <img src="img/logo.png" alt="">
     <img src="img/logo.png" alt="">
 </div>
     <nav>
-        <ul class="header_menu">
+        <ul class="menu">
             <li><a href="index.html">Main</a></li>
             <li><a href="index.html">AWGE</a>
-            <ul>
-                <li><a class ="header_menu_awge" href="">A$AP Mob</a></li>
-                <li><a class ="header_menu_awge" href="">People</a></li>
-                <li><a class ="header_menu_awge" href="">Friends</a></li>
+            <ul class="submenu">
+                <li><a href="">A$AP Mob</a></li>
+                <li><a href="">People</a></li>
+                <li><a href="">Friends</a></li>
             </ul>
             </li>
             <li><a href="index.html">Shop</a></li>
             <li><a href="index.html">Concerts</a>
-                <ul>
-                    <li><a class ="header_menu_con" href="">USA</a></li>
-                    <li><a class ="header_menu_сon" href="">Europe</a></li>
-                    <li><a class ="header_menu_con" href="">Asia</a></li>
+                <ul class="submenu">
+                    <li><a href="">USA</a></li>
+                    <li><a href="">Europe</a></li>
+                    <li><a href="">Asia</a></li>
                 </ul>
             </li>
             <li><a href="index.html">About</a></li>
         </ul>
     </nav>
-    <div class="header_explan">
+</header>
+<section class="main">
+    <div class="explan">
         <img src="img/header-explan.jpg" alt="">
         <h1 class="header_explan_title">what is it?</h1>
         <p class="header_explan_text">
@@ -43,7 +45,7 @@
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
     </div>
-</header>
+</section>
 <section class="biography">
     <div class="bio_container">
         <div class="bio_container_parent">
@@ -85,10 +87,11 @@
 </section>
 <section class="merch">
     <div class="merch_wrap">
-        <div class="product_item_img">
-            <img class="product_img_show" src="img/product_show_1.jpg" alt="">
-            <h1>shmot #1</h1>
-        </div>
+        <div class="product_item">
+            <div class="product_item_img">
+                <img class="product_img_show" src="img/product_show_1.jpg" alt="">
+                <h1>shmot #1</h1>
+            </div>
         <div class="product_item_info">
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -102,40 +105,44 @@
         <div class="product_item_btn">
             <button class="product_order">buy it</button>
         </div>
-        <div class="product_item_img">
-            <img class="product_img_show" src="img/product_show_2.jpg" alt="">
-            <h1>shmot #1</h1>
         </div>
-        <div class="product_item_info">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+        <div class="product_item">
+            <div class="product_item_img">
+                <img class="product_img_show" src="img/product_show_2.jpg" alt="">
+                <h1>shmot #2</h1>
+            </div>
+            <div class="product_item_info">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="product_item_price">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="product_item_btn">
+                <button class="product_order">buy it</button>
+            </div>
         </div>
-        <div class="product_item_price">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-
-        <div class="product_item_btn">
-            <button class="product_order">buy it</button>
-        </div>
-        <div class="product_item_img">
-            <img class="product_img_show" src="img/product_show_3.jpg" alt="">
-            <h1>shmot #1</h1>
-        </div>
-        <div class="product_item_info">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-        <div class="product_item_price">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-        <div class="product_item_btn">
-            <button class="product_order">buy it</button>
+        <div class="product_item">
+            <div class="product_item_img">
+                <img class="product_img_show" src="img/product_show_3.jpg" alt="">
+                <h1>shmot #3</h1>
+            </div>
+            <div class="product_item_info">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="product_item_price">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="product_item_btn">
+                <button class="product_order">buy it</button>
+            </div>
         </div>
         <div class="product_forwarding_button">
             <button class="shop_forward">Get more here!</button>
@@ -179,10 +186,8 @@
                 </div>
             </div>
         </div>
-    </div>
 </section>
 <footer>
-    <div class="footer_wrap">
         <div class="brands_container">
             <div class="asap_brands">
                 <img src="img/footer_logo_asapworldwide.png" alt="">
@@ -194,6 +199,5 @@
                 <img src="img/footer_logo_vlone.png" alt="">
             </div>
         </div>
-    </div>
 </footer>
 </body>
