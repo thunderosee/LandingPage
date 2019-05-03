@@ -21,11 +21,11 @@ header .logo-right{
 }
 header nav{
     display: inline-block;
-    vertical-align: top;
     text-align: center;
     border: 1px solid black;
-    width: 100%;
-    margin:  auto;
+    width: 60%;
+    padding: 0 40px 0 0;
+    margin: auto;
 }
 nav .menu{
     text-decoration: none;
@@ -33,6 +33,8 @@ nav .menu{
 
 }
 nav .menu > li {
+    text-align: center;
+    /*padding: 5px;*/
     display: inline-block;
 }
 nav .menu li > a{
@@ -44,6 +46,7 @@ nav .menu li > a{
     font-family: sans-serif;
     display: inline-block;
     width: 200px;
+    transition: .3s linear;
 }
 nav .menu li a:hover {
     color: black;
@@ -54,4 +57,20 @@ nav .menu li a:hover {
 nav .menu > li:nth-of-type(2n) {
     position: relative;
 }
-
+nav .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    list-style-type: none;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+nav ul li:hover .submenu {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
