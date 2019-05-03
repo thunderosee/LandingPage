@@ -9,47 +9,41 @@ header {
     z-index: 1;
     border: 3px black solid;
 }
-header .logo{
+header .logo-left, header .logo-right{
     display: inline-block;
-    width: 50%;
-
 }
-header .logo img{
+header .logo-left img, header .logo-right img{
     width: 200px;
     height: 100px;
 }
-header .logo img:nth-child(even){
-    position: fixed;
-    right: 0;
+header .logo-right{
+    float: right;
 }
 header nav{
     display: inline-block;
-    padding:0;
-    position: absolute;
+    vertical-align: top;
     text-align: center;
-    top: 13%;
-    left: 35%;
     border: 1px solid black;
-    padding-right: 40px;
+    width: 100%;
+    margin:  auto;
 }
 nav .menu{
-    display: inline-block;
     text-decoration: none;
     list-style-type: none;
+
 }
 nav .menu > li {
     display: inline-block;
-    text-align: center;
-    padding: 5px;
 }
 nav .menu li > a{
-    border-radius: 5%;
+    border-radius: 8%;
     text-decoration: none;
     font-size: 30px;
     background-color: black;
     color: #fff424;
     font-family: sans-serif;
-    padding: 3px;
+    display: inline-block;
+    width: 200px;
 }
 nav .menu li a:hover {
     color: black;
@@ -60,12 +54,4 @@ nav .menu li a:hover {
 nav .menu > li:nth-of-type(2n) {
     position: relative;
 }
-nav .submenu{
-    display: block;
-    position: absolute;
-    list-style-type: none;
-    transition: 0.3s ease-out;
-}
-nav .submenu li{
-    margin: 5%;
-}
+
