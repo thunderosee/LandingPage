@@ -2,55 +2,60 @@ body{
     margin: 0;
 }
 header {
+    text-align: center;
     width: 100%;
     background-color: #fff424;
     position: fixed;
     top: 0;
     z-index: 1;
     border: 3px black solid;
-    text-align: center;
 }
-header .logo-left, header .logo-right{
+header .logo{
+    float: left;
     display: inline-block;
+    /* width: 50%; */
+
 }
-header .logo-left img, header .logo-right img{
+header .logo.right{
+    float: right;
+}
+header .logo img{
     width: 200px;
     height: 100px;
 }
-header .logo-left{
-    float: left;
-}
-header .logo-right{
-    float: right;
-}
+/* header .logo img:nth-child(even){
+    position: fixed;
+    right: 0;
+} */
 header nav{
     vertical-align: top;
     display: inline-block;
+    padding:0;
+    /* position: absolute; */
     text-align: center;
+    /* top: 13%; */
+    /* left: 35%; */
     border: 1px solid black;
-    padding: 0 40px 0 0;
-    margin-top: 17px;
+    padding-right: 40px;
 }
 nav .menu{
+    display: inline-block;
     text-decoration: none;
     list-style-type: none;
-
 }
 nav .menu > li {
-    text-align: center;
-    /*padding: 5px;*/
     display: inline-block;
+    text-align: center;
+    padding: 5px;
 }
 nav .menu li > a{
-    border-radius: 8%;
+    border-radius: 5%;
     text-decoration: none;
     font-size: 30px;
     background-color: black;
     color: #fff424;
     font-family: sans-serif;
-    display: inline-block;
-    width: 200px;
-    transition: .3s linear;
+    padding: 3px;
 }
 nav .menu li a:hover {
     color: black;
@@ -61,20 +66,12 @@ nav .menu li a:hover {
 nav .menu > li:nth-of-type(2n) {
     position: relative;
 }
-nav .submenu {
+nav .submenu{
     display: block;
     position: absolute;
-    padding-left: 0;
     list-style-type: none;
-    -webkit-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
+    transition: 0.3s ease-out;
 }
-nav ul li:hover .submenu {
-    -webkit-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-    transform: scaleY(1);
+nav .submenu li{
+    margin: 5%;
 }
