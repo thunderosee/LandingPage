@@ -27,39 +27,35 @@ header nav{
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 0 40px 0 0;
     margin-top: 17px;
 }
 nav .menu{
     text-decoration: none;
     list-style-type: none;
-
 }
 nav .menu > li {
     text-align: center;
-    /*padding: 5px;*/
     display: inline-block;
+    max-width: 200px;
 }
 nav .menu li > a{
-    border-radius: 8%;
+    /*border-radius: 8%;*/
     text-decoration: none;
     font-size: 30px;
     background-color: black;
     color: #fff424;
     font-family: sans-serif;
     display: inline-block;
+    border: 1px solid #000;
     width: 200px;
-    transition: .3s linear;
 }
 nav .menu li a:hover {
-    color: black;
+    color: #000;
     background-color: #fff424;
-    border: 1px solid black;
-    transition: .3s ease-out;
-}
-nav .menu > li:nth-of-type(2n) {
-    position: relative;
+    border: 1px solid #000;
+    width: 200px;
 }
 nav .submenu {
     display: block;
