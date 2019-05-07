@@ -74,3 +74,41 @@ nav ul li:hover .submenu {
     -ms-transform: scaleY(1);
     transform: scaleY(1);
 }
+.main{
+    margin-top: 80px;
+}
+.explain{
+    text-align: center;
+    background-image:  url("img/header-explan.jpg");
+    background-repeat: round;
+    height: 588px;
+    padding-top: 30px;
+}
+.explain img{
+    opacity: 0;
+}
+.self-type {
+    font: 150px "Helvetica ultralight";
+    /*margin: auto;*/
+    color: #ffffff;;
+    padding-bottom: 20px;
+    text-shadow: #000000 5px 5px 5px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-align: left;
+    -webkit-animation: type 2s steps(100, end);
+    animation: type 2s steps(100, end);
+}
+@keyframes type{
+     0% { width: 0; }
+ }
+@-webkit-keyframes type{
+    0% { width: 0; }
+}
+.explain-text{
+    width: 1000px;
+    margin: auto;
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: #000000 5px 5px 5px;
+}
