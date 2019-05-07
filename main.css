@@ -88,12 +88,23 @@ nav ul li:hover .submenu {
     opacity: 0;
 }
 .self-type {
-    font: 150px "Helvetica ultralight";
+    font: 50px "Helvetica ultralight";
     margin: auto;
     color: #ffffff;;
     padding-bottom: 20px;
-    text-shadow: #000000 5px 5px 5px;
+    /*text-shadow: #000000 5px 5px 5px;*/
+    white-space:nowrap;
+    overflow:hidden;
+    text-align: left;
+    -webkit-animation: type 2s steps(100, end);
+    animation: type 2s steps(100, end);
+}
+@keyframes type{
+    0% { width: 0; }
+}
 
+@-webkit-keyframes type{
+    0% { width: 0; }
 }
 .explain-text{
     width: 1000px;
