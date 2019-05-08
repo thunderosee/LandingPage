@@ -75,34 +75,30 @@ nav ul li:hover .submenu {
     transform: scaleY(1);
 }
 .main{
-    margin-top: 80px;
-}
-.explain{
-    text-align: center;
-    background-image:  url("img/header-explan.jpg");
+    margin-top: 80px;text-align: center;
+    background-image: url("img/header-explan.jpg");
     background-repeat: round;
-    height: 588px;
+    width: 1920px;
+    height: 1080px;
     padding-top: 30px;
 }
-.explain img{
-    opacity: 0;
-}
 .self-type {
-    font: 50px "Helvetica ultralight";
+    font-size: 150px;
     margin: auto;
     color: #ffffff;;
-    padding-bottom: 20px;
-    /*text-shadow: #000000 5px 5px 5px;*/
+    padding-bottom: 70px;
+    padding-top: 70px;
+    text-shadow: #000000 5px 5px 5px;
+    width: 700px;
     white-space:nowrap;
     overflow:hidden;
-    text-align: left;
-    -webkit-animation: type 2s steps(100, end);
-    animation: type 2s steps(100, end);
+    text-align: center;
+    -webkit-animation: type 1.5s steps(100, end);
+    animation: type 1.5s steps(100, end);
 }
 @keyframes type{
     0% { width: 0; }
 }
-
 @-webkit-keyframes type{
     0% { width: 0; }
 }
@@ -112,4 +108,14 @@ nav ul li:hover .submenu {
     font-size: 36px;
     color: #ffffff;
     text-shadow: #000000 5px 5px 5px;
+    overflow: hidden;
+    text-align: center/;
+    animation: zoom-in 2s;
+    -webkit-animation: zoom-in 2s;
+}
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+    }
 }
